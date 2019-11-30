@@ -1,4 +1,3 @@
-<%= form_for @song do |f| %>
 <% if @song.errors.any? %>
 <div id="error_explanation">
   <h2>
@@ -14,6 +13,7 @@
 </div>
 <% end %>
 
+<%= form_for @song do |f| %>
   <%= f.text_field :title %>
   <%= f.text_field :released %>
   <%= f.text_field :release_year %>
