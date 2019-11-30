@@ -9,6 +9,8 @@ class SongsController < ApplicationController
 
   def new
     @song = Song.new
+    #<%= f.check_box :released %>
+    #<%= f.number_field :release_year %>
   end
 
   def create
